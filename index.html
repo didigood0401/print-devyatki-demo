@@ -1,0 +1,41 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Принт «четыре девятки» - макет</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EDEDEA;--ink:#111}
+*{box-sizing:border-box;margin:0}body{background:var(--bg);font-family:'Roboto Condensed',sans-serif;color:var(--ink);padding:32px 16px 60px}
+h1{font-weight:600;font-size:26px;max-width:1100px;margin:0 auto 6px}p.s{max-width:1100px;margin:0 auto 26px;color:#555}
+.g{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.c{background:#fff;border-radius:14px;padding:16px}.c b{display:block;margin:4px 6px 10px;font-weight:600}
+svg{width:100%;height:auto;display:block}
+.note{max-width:1100px;margin:22px auto 0;background:#fff;border-radius:14px;padding:18px 20px;line-height:1.6}
+@media(max-width:760px){.g{grid-template-columns:1fr}}
+</style></head><body>
+<h1>Принт «у меня четыре девятки» - рабочий макет</h1>
+<p class="s">Вектор (SVG), шрифт Roboto Condensed Light 300, ВАЗ-2109 строго сверху, точка между парами - по ТЗ.</p>
+<svg width="0" height="0" style="position:absolute"><defs>
+ <path id="shirt" d="M150 40l70-30q60 30 120 0l70 30 110 70-50 90-60-30v370H150V170l-60 30-50-90Z"/>
+ <symbol id="car" viewBox="0 0 80 170">
+  <rect x="6" y="2" width="68" height="166" rx="13" fill="#3E9B4F"/>
+  <rect x="6" y="2" width="68" height="166" rx="13" fill="none" stroke="#1F5E2B" stroke-width="2"/>
+  <path d="M10 6h60" stroke="#C9D3CF" stroke-width="3"/><rect x="12" y="4" width="10" height="5" rx="2" fill="#F2F0E4"/><rect x="58" y="4" width="10" height="5" rx="2" fill="#F2F0E4"/>
+  <path d="M18 44q22-8 44 0" stroke="#2F7C3E" stroke-width="2" fill="none"/>
+  <path d="M14 58q26-10 52 0l-5 20H19Z" fill="#14181B"/>
+  <rect x="17" y="80" width="46" height="52" rx="4" fill="#45A857"/>
+  <path d="M15 82v46M65 82v46" stroke="#14181B" stroke-width="5"/>
+  <path d="M19 134h42l4 18q-25 6-50 0Z" fill="#14181B"/>
+  <rect x="1" y="62" width="7" height="7" rx="2" fill="#1F5E2B"/><rect x="72" y="62" width="7" height="7" rx="2" fill="#1F5E2B"/>
+  <rect x="10" y="158" width="14" height="6" rx="2" fill="#B3262B"/><rect x="56" y="158" width="14" height="6" rx="2" fill="#B3262B"/>
+  <rect x="32" y="159" width="16" height="5" fill="#F2F0E4" stroke="#333" stroke-width=".6"/>
+ </symbol>
+</defs></svg>
+<div class="g">
+ <div class="c"><b>Перед</b><svg viewBox="0 0 600 560"><use href="#shirt" fill="#fff" stroke="#ccc" stroke-width="3"/><path d="M220 10q60 40 120 0" fill="none" stroke="#ccc" stroke-width="3"/>
+  <text x="300" y="150" text-anchor="middle" font-family="Roboto Condensed" font-weight="300" font-size="30" fill="#000">у меня четыре девятки</text></svg></div>
+ <div class="c"><b>Спина</b><svg viewBox="0 0 600 560"><use href="#shirt" fill="#fff" stroke="#ccc" stroke-width="3"/><path d="M220 10q60 14 120 0" fill="none" stroke="#ccc" stroke-width="3"/>
+  <use href="#car" x="178" y="140" width="52" height="111"/><use href="#car" x="236" y="140" width="52" height="111"/>
+  <circle cx="300" cy="245" r="4.5" fill="#000"/>
+  <use href="#car" x="312" y="140" width="52" height="111"/><use href="#car" x="370" y="140" width="52" height="111"/></svg></div>
+</div>
+<div class="note">Это быстрый набросок в векторе. В работе: машины прорисовываются точно по вашему референсу (решётка, фары, стойки, зеркала), точка или запятая - на выбор, размеры под печать (A4/A3, DTF или шелкография). Результат: PNG перед/спина + SVG со шрифтом в кривых.</div>
+</body></html>
